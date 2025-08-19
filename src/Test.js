@@ -21,12 +21,12 @@ export default function Test() {
         style={{
           display: "flex",
           flexDirection: "column",
-          maxWidth: "100%",
+          maxWidth: "100vw",
           height: "100vh",
           overflow: "visible",
         }}
       >
-        <div style={{ width: "100%", height: "600px", position: "relative" }}>
+        <div style={{ width: "100vw", height: "90vh", position: "relative" }}>
           <LightRays
             raysOrigin="top-center"
             raysColor="white"
@@ -46,18 +46,18 @@ export default function Test() {
             display: "flex",
             flexDirection: "row",
             position: "fixed",
-            width: "100%",
+            width: "100vw",
             zindex: "1000",
           }}
         >
           <div
             id="name"
             style={{
-              width: "90%",
+              width: "90vw",
               display: "flex",
               alignSelf: "flex-start",
               marginTop: "5px",
-              maxHeight: "20%",
+              maxHeight: "20vh",
               height: "10vh",
             }}
           >
@@ -91,7 +91,7 @@ export default function Test() {
           </div>
           <div
             id="threeicon"
-            style={{ width: "10%", display: "flex", alignSelf: "flex-end" }}
+            style={{ width: "10vw", display: "flex", alignSelf: "flex-end" }}
           >
             <button
               style={{
@@ -120,7 +120,7 @@ export default function Test() {
             flexDirection: "column",
             alignItems: "center",
             alignContent: "center",
-            width: "100%",
+            width: "100vw",
             marginBottom: "100px",
           }}
         >
@@ -170,7 +170,7 @@ export default function Test() {
               <h1 style={{ textAlign: "center" }}>
                 {" "}
                 <SpotlightCard
-                  style={{ alignSelf: "center", width: "30%" }}
+                  style={{ alignSelf: "center", width: "30vw" }}
                   className="custom-spotlight-card"
                   spotlightColor="rgba(0, 229, 255, 0.2)"
                 >
@@ -180,7 +180,7 @@ export default function Test() {
               <h1 style={{ textAlign: "center" }}>
                 {" "}
                 <SpotlightCard
-                  style={{ alignSelf: "center", width: "30%" }}
+                  style={{ alignSelf: "center", width: "30vw" }}
                   className="custom-spotlight-card"
                   spotlightColor="rgba(0, 229, 255, 0.2)"
                 >
@@ -190,7 +190,7 @@ export default function Test() {
               <h1 style={{ textAlign: "center" }}>
                 {" "}
                 <SpotlightCard
-                  style={{ alignSelf: "center", width: "30%" }}
+                  style={{ alignSelf: "center", width: "30vw" }}
                   className="custom-spotlight-card"
                   spotlightColor="rgba(0, 229, 255, 0.2)"
                 >
@@ -200,7 +200,7 @@ export default function Test() {
               <h1 style={{ textAlign: "center" }}>
                 {" "}
                 <SpotlightCard
-                  style={{ alignSelf: "center", width: "30%" }}
+                  style={{ alignSelf: "center", width: "30vw" }}
                   className="custom-spotlight-card"
                   spotlightColor="rgba(0, 229, 255, 0.2)"
                 >
@@ -214,7 +214,7 @@ export default function Test() {
           id="Bottom"
           style={{
             alignSelf: "flex-end",
-            width: "100%",
+            width: "100vw",
             display: "flex",
             flexDirection: "column",
             marginTop: "200px",
