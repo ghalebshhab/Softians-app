@@ -1,0 +1,42 @@
+@media (min-width: 1024px) {
+  #name {
+    margin-top: 5px;
+  }
+}
+@media (max-width: 480px) {
+  #name {
+    margin-top: 3px;
+  }
+}
+@media (max-width: 480px) {
+  #home {
+     margin-bottom: 9px;
+     margin-left: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  #home {
+     margin-bottom: 15px;
+     margin-left: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  #content {
+     margin-top: 100px,
+  }
+}
+@media (max-width: 480px) {
+  #content {
+     margin-top: 60px,
+  }
+}
+@media (min-width: 1024px) {
+  #Shiny {
+    margin-top: 30px,
+  }
+}
+@media (max-width: 480px) {
+  #Shiny {
+       margin-top: 7px,
+  }
+}

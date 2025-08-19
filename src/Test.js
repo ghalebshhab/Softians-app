@@ -16,6 +16,7 @@ import Software from "./Majors/Software";
 import Cyper from "./Majors/Cyper";
 import Artifitial from "./Majors/Artifitial";
 import Computers from "./Majors/Computers";
+import "./Test.css";
 export default function Test() {
   const handleAnimationComplete = () => {
     console.log("All letters have animated!");
@@ -69,21 +70,19 @@ export default function Test() {
               width: "90vw",
               display: "flex",
               alignSelf: "flex-start",
-              marginTop: "5px",
               maxHeight: "20vh",
               height: "10vh",
             }}
           >
             <CircleIcon
               style={{
-                color: "white",
-                fontSize: "32px",
+                color: "#bdbdbd",
                 display: "flex",
                 alignSelf: "center",
               }}
             />
             <h1
-              style={{ display: "flex", alignSelf: "center", color: "white" }}
+              style={{ display: "flex", alignSelf: "center", color: "#bdbdbd" }}
             >
               <SplitText
                 style={{}}
@@ -107,8 +106,8 @@ export default function Test() {
             style={{ width: "10vw", display: "flex", alignSelf: "flex-end" }}
           >
             <button
+              id="home"
               style={{
-                marginBottom: "15px",
                 border: "none",
                 alignSelf: "center",
                 backgroundColor: "black",
@@ -116,10 +115,9 @@ export default function Test() {
             >
               <HomeRoundedIcon
                 style={{
-                  color: "white",
+                  color: "#bdbdbd",
                   backgroundColor: "black",
                   fontSize: "32px",
-                  marginLeft: "50px",
                 }}
               />
             </button>
@@ -133,16 +131,15 @@ export default function Test() {
             alignItems: "center",
             alignContent: "center",
             width: "100vw",
-            marginTop: "100px",
             position: "absolute",
           }}
         >
           <h1
+            id="Shiny"
             style={{
               display: "flex",
               alignSelf: "center",
               color: "white",
-              marginTop: "10px",
             }}
           >
             <ShinyText
