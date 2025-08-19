@@ -10,6 +10,12 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ClickSpark from "./Animation/ClickSpark";
 import ShapeBlur from "./Animation/ShapeBlur";
 import SpotlightCard from "./Animation/SpotlightCard";
+import { Link, Routes, Route } from "react-router-dom";
+import Test2 from "./Test2";
+import Software from "./Majors/Software";
+import Cyper from "./Majors/Cyper";
+import Artifitial from "./Majors/Artifitial";
+import Computers from "./Majors/Computers";
 export default function Test() {
   const handleAnimationComplete = () => {
     console.log("All letters have animated!");
@@ -26,7 +32,14 @@ export default function Test() {
           overflow: "visible",
         }}
       >
-        <div style={{ width: "100vw", height: "90vh", position: "relative" }}>
+        <div
+          style={{
+            width: "100vw",
+            height: "90vh",
+            position: "relative",
+            zIndex: "-1",
+          }}
+        >
           <LightRays
             raysOrigin="top-center"
             raysColor="white"
@@ -115,13 +128,13 @@ export default function Test() {
         <div
           id="content"
           style={{
-            position: "absolute",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             alignContent: "center",
             width: "100vw",
-            marginBottom: "100px",
+            marginTop: "100px",
+            position: "absolute",
           }}
         >
           <h1
@@ -129,7 +142,7 @@ export default function Test() {
               display: "flex",
               alignSelf: "center",
               color: "white",
-              marginTop: "50px",
+              marginTop: "10px",
             }}
           >
             <ShinyText
@@ -167,46 +180,78 @@ export default function Test() {
                 flexDirection: "column",
               }}
             >
-              <h1 style={{ textAlign: "center" }}>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                to="/Software"
+                style={{ textDecoration: "none", color: "#bdbdbd" }}
+              >
                 {" "}
-                <SpotlightCard
-                  style={{ alignSelf: "center", width: "30vw" }}
-                  className="custom-spotlight-card"
-                  spotlightColor="rgba(0, 229, 255, 0.2)"
-                >
-                  Software
-                </SpotlightCard>
-              </h1>
-              <h1 style={{ textAlign: "center" }}>
+                <h1 style={{ textAlign: "center" }}>
+                  {" "}
+                  <SpotlightCard
+                    style={{ alignSelf: "center", width: "30vw" }}
+                    className="custom-spotlight-card"
+                    spotlightColor="rgba(0, 229, 255, 0.2)"
+                  >
+                    Software
+                  </SpotlightCard>
+                </h1>
+              </Link>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                to="/Computers"
+                style={{ textDecoration: "none", color: "#bdbdbd" }}
+              >
                 {" "}
-                <SpotlightCard
-                  style={{ alignSelf: "center", width: "30vw" }}
-                  className="custom-spotlight-card"
-                  spotlightColor="rgba(0, 229, 255, 0.2)"
-                >
-                  Computer Sicence
-                </SpotlightCard>
-              </h1>
-              <h1 style={{ textAlign: "center" }}>
+                <h1 style={{ textAlign: "center" }}>
+                  {" "}
+                  <SpotlightCard
+                    style={{ alignSelf: "center", width: "30vw" }}
+                    className="custom-spotlight-card"
+                    spotlightColor="rgba(0, 229, 255, 0.2)"
+                  >
+                    Computer Sicence
+                  </SpotlightCard>
+                </h1>
+              </Link>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                to="/Artificial"
+                style={{ textDecoration: "none", color: "#bdbdbd" }}
+              >
                 {" "}
-                <SpotlightCard
-                  style={{ alignSelf: "center", width: "30vw" }}
-                  className="custom-spotlight-card"
-                  spotlightColor="rgba(0, 229, 255, 0.2)"
-                >
-                  Artificial Intellegence
-                </SpotlightCard>
-              </h1>
-              <h1 style={{ textAlign: "center" }}>
+                <h1 style={{ textAlign: "center" }}>
+                  {" "}
+                  <SpotlightCard
+                    style={{ alignSelf: "center", width: "30vw" }}
+                    className="custom-spotlight-card"
+                    spotlightColor="rgba(0, 229, 255, 0.2)"
+                  >
+                    Artificial Intellegence
+                  </SpotlightCard>
+                </h1>
+              </Link>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                to="/Cyper"
+                style={{ textDecoration: "none", color: "#bdbdbd" }}
+              >
                 {" "}
-                <SpotlightCard
-                  style={{ alignSelf: "center", width: "30vw" }}
-                  className="custom-spotlight-card"
-                  spotlightColor="rgba(0, 229, 255, 0.2)"
-                >
-                  Cyper Security
-                </SpotlightCard>
-              </h1>
+                <h1 style={{ textAlign: "center" }}>
+                  {" "}
+                  <SpotlightCard
+                    style={{ alignSelf: "center", width: "30vw" }}
+                    className="custom-spotlight-card"
+                    spotlightColor="rgba(0, 229, 255, 0.2)"
+                  >
+                    Cyper Security
+                  </SpotlightCard>
+                </h1>
+              </Link>
             </div>
           </div>
         </div>
