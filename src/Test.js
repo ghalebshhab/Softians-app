@@ -117,7 +117,7 @@ export default function Test() {
                 style={{
                   color: "#bdbdbd",
                   backgroundColor: "black",
-                  fontSize: "32px",
+                  fontSize: "32px !important",
                 }}
               />
             </button>
@@ -259,7 +259,6 @@ export default function Test() {
             width: "100vw",
             display: "flex",
             flexDirection: "column",
-            marginTop: "200px",
             zIndex: "1000",
             justifyContent: "center",
             position: "fixed",
