@@ -11,7 +11,6 @@ import ClickSpark from "./Animation/ClickSpark";
 import ShapeBlur from "./Animation/ShapeBlur";
 import SpotlightCard from "./Animation/SpotlightCard";
 import { Link, Routes, Route } from "react-router-dom";
-import Test2 from "./Test2";
 import Software from "./Majors/Software";
 import Cyper from "./Majors/Cyper";
 import Artifitial from "./Majors/Artifitial";
@@ -30,26 +29,29 @@ export default function Test() {
           flexDirection: "column",
           maxWidth: "100vw",
           height: "100vh",
-          overflow: "visible",
+          overflow: "auto",
+          position: "relative",
         }}
       >
         <div
           style={{
             width: "100vw",
-            height: "90vh",
+            height: "100vh",
             position: "relative",
             zIndex: "-1",
+            display: "inline",
           }}
         >
           <LightRays
+            style={{ height: "100vh" }}
             raysOrigin="top-center"
             raysColor="white"
             raysSpeed={1.5}
             lightSpread={0.8}
-            rayLength={1.2}
+            rayLength={30}
             followMouse={true}
             mouseInfluence={0.1}
-            noiseAmount={0.1}
+            noiseAmount={0.05}
             distortion={0.05}
             className="custom-rays"
           />
@@ -110,14 +112,14 @@ export default function Test() {
               style={{
                 border: "none",
                 alignSelf: "center",
-                backgroundColor: "black",
+                backgroundColor: "transparent",
               }}
             >
               <HomeRoundedIcon
                 style={{
                   color: "#bdbdbd",
-                  backgroundColor: "black",
-                  fontSize: "32px !important",
+                  backgroundColor: "transparent",
+                  fontSize: "37px",
                 }}
               />
             </button>
@@ -252,6 +254,7 @@ export default function Test() {
             </div>
           </div>
         </div>
+        <div style={{ color: "white" }}>Hello bro</div>
         <div
           id="Bottom"
           style={{
