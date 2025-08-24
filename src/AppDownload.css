@@ -77,7 +77,7 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  background-image: url("../../Light.png");
+  background-image: url("../Light.png");
   background-position: center;
   background-size: contain;
 }
