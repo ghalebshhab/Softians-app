@@ -8,6 +8,7 @@ import Cyper from './Majors/Cyper';
 import Artifitial from './Majors/Artifitial';
 import Computers from './Majors/Computers';
 import LightRays from './Animation/LightRays';
+import Mobileapp from './Mobileapp';
 function App() {
   return (
     
@@ -19,7 +20,9 @@ function App() {
         <Route path="/Cyper" element={<Cyper />} />
         <Route path="/Artificial" element={<Artifitial />} />
         <Route path="/Computers" element={<Computers />} />
+        <Route path='/Mobileapp' element={<Mobileapp/>}/>
         <Route path="*" element={<div>Page not Found </div>} />
+
       </Routes>
    </>
   );

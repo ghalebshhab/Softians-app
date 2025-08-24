@@ -11,8 +11,14 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Magnet from "./Animation/Magent";
 import BlurText from "./Animation/BlurText";
 import StickerPeel from "./Animation/StickerPeel";
-import logo from "./Jordan.gif";
+import { Link } from "react-router-dom";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import Sapp from "./Sapp";
+import { useState } from "react";
+import SideBar from "./Animation/SideBar";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 export default function Test3() {
+  const [click, setclick] = useState(false);
   return (
     <>
       <div id="container">
@@ -33,7 +39,8 @@ export default function Test3() {
 
         <header id="header">
           <div className="logo-container">
-            <div className="circle-icon">S</div>
+            <div className="circle-icon"></div>
+
             <h1 className="logo-text">
               <SplitText
                 style={{}}
@@ -51,7 +58,13 @@ export default function Test3() {
               />
             </h1>
           </div>
-          <button className="home-btn">
+          <button
+            className="home-btn"
+            onClick={() => {
+              if (!click) setclick(true);
+              else setclick(false);
+            }}
+          >
             <span className="material-icons">
               <HomeRoundedIcon style={{ fontSize: "32px" }} />
             </span>
@@ -108,96 +121,171 @@ export default function Test3() {
               <div className="major-card">
                 <h3>
                   {" "}
-                  <SpotlightCard
-                    style={{ alignSelf: "center", width: "30vw" }}
-                    className="custom-spotlight-card"
-                    spotlightColor="rgba(0, 229, 255, 0.2)"
+                  <Link
+                    to="/Software"
+                    target="blank"
+                    title="Go to Software Page"
                   >
-                    Software
-                  </SpotlightCard>
+                    {" "}
+                    <SpotlightCard
+                      style={{ alignSelf: "center", width: "30vw" }}
+                      className="custom-spotlight-card"
+                      spotlightColor="rgba(0, 229, 255, 0.2)"
+                    >
+                      Software
+                    </SpotlightCard>
+                  </Link>
                 </h3>
-                <p>
-                  Learn to design, develop, and maintain software systems using
-                  engineering principles and best practices.
-                </p>
               </div>
             </div>
           </section>
 
-          <section className="additional-content">
-            <h2>About Softians</h2>
-            <p>
-              Softians is a leading educational platform dedicated to providing
-              high-quality resources and learning experiences for aspiring
-              software professionals and computer scientists.
-            </p>
-            <p>
-              Our mission is to bridge the gap between academic knowledge and
-              industry requirements, empowering students with practical skills
-              and cutting-edge technologies.
-            </p>
-            <p>
-              With expert instructors and a comprehensive curriculum, we help
-              you build a successful career in the ever-evolving tech industry.
-            </p>
-          </section>
-
-          <section className="additional-content">
-            <h1>
-              <BlurText
-                text="Why Choose Us?"
-                delay={150}
-                animateBy="words"
-                direction="top"
-                className="text-2xl mb-8"
-              />{" "}
-            </h1>
-            <p>
-              • Industry-relevant curriculum designed with input from tech
-              leaders
-            </p>
-            <p>• Hands-on projects and real-world applications</p>
-            <p>• Flexible learning paths tailored to your career goals</p>
-            <p>• Supportive community of learners and mentors</p>
-            <p>• Career guidance and job placement assistance</p>
-          </section>
-          <StickerPeel
-            imageSrc={logo}
-            width={200}
-            rotate={30}
-            peelBackHoverPct={20}
-            peelBackActivePct={40}
-            shadowIntensity={0.6}
-            lightingIntensity={0.1}
-            initialPosition={{ x: -100, y: 100 }}
-          />
+          <Sapp />
+          <div className="contact">
+            <h3 style={{ textAlign: "center" }}>Contact US :</h3>
+            <div
+              className="social-links"
+              style={{
+                alignItems: "center",
+                textAlign: "center",
+                justifyContent: "center",
+                marginTop: "10px",
+              }}
+            >
+              <button className="social-btn">
+                <span className="material-icons">
+                  <a
+                    href="https://www.facebook.com/share/g/17GrEYsQpL/"
+                    target="blank"
+                    title="Our Facebook"
+                  >
+                    {" "}
+                    <Magnet padding={50} disabled={false} magnetStrength={5}>
+                      <FacebookRoundedIcon />
+                    </Magnet>
+                  </a>
+                </span>
+              </button>
+              <button className="social-btn">
+                <span className="material-icons">
+                  <a
+                    href="https://www.youtube.com/@SOFTIANS_Channel"
+                    target="blank"
+                    title="Our YouTube"
+                  >
+                    {" "}
+                    <Magnet padding={50} disabled={false} magnetStrength={5}>
+                      <YouTubeIcon />
+                    </Magnet>
+                  </a>
+                </span>
+              </button>
+              <button className="social-btn">
+                <span className="material-icons">
+                  <a
+                    href="https://www.linkedin.com/company/softinas-hu/"
+                    target="blank"
+                    title="Our LinkedIn"
+                  >
+                    {" "}
+                    <Magnet padding={50} disabled={false} magnetStrength={5}>
+                      <LinkedInIcon />
+                    </Magnet>
+                  </a>
+                </span>
+              </button>
+              <button className="social-btn">
+                <span className="material-icons">
+                  <a
+                    href="https://www.instagram.com/softians.hu/"
+                    target="blank"
+                    title="Our Instagram"
+                  >
+                    {" "}
+                    <Magnet padding={50} disabled={false} magnetStrength={5}>
+                      <InstagramIcon />
+                    </Magnet>
+                  </a>
+                </span>
+              </button>
+              <button className="social-btn">
+                <span className="material-icons">
+                  <a
+                    href="https://whatsapp.com/channel/0029Vb6kQp46xCSNzwrb2I1A"
+                    target="blank"
+                    title="Our Whatsapp"
+                  >
+                    {" "}
+                    <Magnet padding={50} disabled={false} magnetStrength={5}>
+                      <WhatsAppIcon />
+                    </Magnet>
+                  </a>
+                </span>
+              </button>
+            </div>
+          </div>
         </main>
 
-        <footer id="footer">
+        {/* <footer id="footer">
           <div className="social-links">
             <button className="social-btn">
               <span className="material-icons">
-                <Magnet padding={50} disabled={false} magnetStrength={5}>
-                  <FacebookRoundedIcon />
-                </Magnet>
+                <a
+                  href="https://www.facebook.com/share/g/17GrEYsQpL/"
+                  target="blank"
+                  title="Our Facebook"
+                >
+                  {" "}
+                  <Magnet padding={50} disabled={false} magnetStrength={5}>
+                    <FacebookRoundedIcon />
+                  </Magnet>
+                </a>
               </span>
             </button>
             <button className="social-btn">
               <span className="material-icons">
-                <Magnet padding={50} disabled={false} magnetStrength={5}>
-                  <YouTubeIcon />
-                </Magnet>
+                <a
+                  href="https://www.youtube.com/@SOFTIANS_Channel"
+                  target="blank"
+                  title="Our YouTube"
+                >
+                  {" "}
+                  <Magnet padding={50} disabled={false} magnetStrength={5}>
+                    <YouTubeIcon />
+                  </Magnet>
+                </a>
               </span>
             </button>
             <button className="social-btn">
               <span className="material-icons">
-                <Magnet padding={50} disabled={false} magnetStrength={5}>
-                  <LinkedInIcon />
-                </Magnet>
+                <a
+                  href="https://www.linkedin.com/company/softinas-hu/"
+                  target="blank"
+                  title="Our LinkedIn"
+                >
+                  {" "}
+                  <Magnet padding={50} disabled={false} magnetStrength={5}>
+                    <LinkedInIcon />
+                  </Magnet>
+                </a>
+              </span>
+            </button>
+            <button className="social-btn">
+              <span className="material-icons">
+                <a
+                  href="https://www.instagram.com/softians.hu/"
+                  target="blank"
+                  title="Our Instagram"
+                >
+                  {" "}
+                  <Magnet padding={50} disabled={false} magnetStrength={5}>
+                    <InstagramIcon />
+                  </Magnet>
+                </a>
               </span>
             </button>
           </div>
-        </footer>
+        </footer> */}
       </div>
     </>
   );

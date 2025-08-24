@@ -11,6 +11,11 @@
             min-height: 100vh;
             overflow-x: hidden;
         }
+        a{
+            text-decoration: none;
+            
+            color: #bdbdbd;
+        }
         
         #container {
             display: flex;
@@ -74,27 +79,30 @@
         }
         
         .circle-icon {
-            width: 40px;
-            height: 40px;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
-            background-color:black;
+            /* background-color:black;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            font-weight: bold;
+            font-weight: bold; */
+            background-image: url("../../../../../../Downloads/Light.png");
+            background-size: 100%;
+            background-position: center;
+            background-color:black;
         }
         
-        /* .logo-text {
-            font-size: 1.8rem;
-            font-weight: 600;
-            background: linear-gradient(to right, #00e5ff, #00a8ff);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            letter-spacing: 1px;
-        } */
-        
+        .logo-text {
+            margin-top: 4px;
+        } 
+        .Side{
+            align-self: flex-start;
+            height: 50%;
+            z-index: 100000000;
+            width: 30%;
+        }
         .home-btn {
             background: transparent;
             border: none;
@@ -163,13 +171,14 @@
             position: relative;
             padding: 0.5rem 1rem;
             cursor: pointer;
+            width: 60%;
         }
         
         .majors-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
-            width: 100%;
+            width: 60%;
         }
         
         .major-card {
@@ -276,13 +285,35 @@
             justify-content: center;
             font-size: 1.8rem;
             transition: all 0.3s ease;
+            
         }
         
-        .social-btn:hover {
-            color: #00e5ff;
-            transform: translateY(-3px);
+        #App{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
         }
+        input{
+            text-align: right;
+            font-size: 16px;
+            color: black;
+            margin-bottom: 5px;
+        }
+        #but{
+            color:black;
+            background-color: white;
+            border: 1px solid black  ;
+        }
+        #subjects{
+            display: flex;
+            justify-content: center;
         
+        }
+        #inn{
+            width: 10%;
+            margin-left: 5px;
+            
+        }
         /* Responsive design */
         @media (max-width: 768px) {
             #header {

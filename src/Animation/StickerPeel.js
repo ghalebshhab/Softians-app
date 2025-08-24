@@ -1,7 +1,6 @@
 import { useRef, useEffect, useMemo } from "react";
 import { gsap } from "gsap";
 import { Draggable } from "gsap/Draggable";
-import "./StickerPeel.css";
 
 gsap.registerPlugin(Draggable);
 
