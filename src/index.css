@@ -10,9 +10,19 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@media (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    font-size: 16px;
+  }}
